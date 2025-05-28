@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "694d597d-ad83-4cff-9e0f-b1f144a310f7",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Browser Client",
@@ -172,6 +172,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -255,7 +256,6 @@
               ]
             },
             "id": "1eba5e0b-b6cd-41b9-b560-a46f7e7aa9b4",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web App",
@@ -316,6 +316,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -399,7 +400,6 @@
               ]
             },
             "id": "e839b617-e726-48d1-9de4-244f234f9a12",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
@@ -441,6 +441,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -524,7 +525,6 @@
               ]
             },
             "id": "6c331912-51a5-476d-b88b-6ef33f671a82",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "SQL DATABASE",
@@ -581,6 +581,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -664,7 +665,6 @@
               ]
             },
             "id": "1091b0e0-b7a8-4d74-9e21-fcfd3d826ed1",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Auth",
