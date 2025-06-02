@@ -1260,19 +1260,63 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "6481f904-17d1-4c5b-9487-ca6fb6b1d614",
+            "id": "d0419db7-9141-4c28-a082-6d3f66061d58",
             "source": {
-              "x": 420,
-              "y": 20
+              "x": 690,
+              "y": 30
             },
             "target": {
-              "x": 870,
-              "y": 420
+              "x": 730,
+              "y": 440
             },
             "vertices": [
               {
-                "x": 590,
-                "y": 300
+                "x": 650,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "7a0d98ab-0e2b-489c-bb8b-a019842aa102",
+            "source": {
+              "x": 410,
+              "y": 60
+            },
+            "target": {
+              "x": 560,
+              "y": 50
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": 100
+              },
+              {
+                "x": 470,
+                "y": 120
+              },
+              {
+                "x": 530,
+                "y": 120
+              },
+              {
+                "x": 560,
+                "y": 100
               }
             ]
           }
