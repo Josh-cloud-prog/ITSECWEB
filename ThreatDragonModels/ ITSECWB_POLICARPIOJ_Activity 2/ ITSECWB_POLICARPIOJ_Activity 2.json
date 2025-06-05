@@ -31,8 +31,8 @@
                 "text": "Browser Client"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -128,23 +128,9 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "39ab14f2-527d-4cca-8503-c8ba8f7ad32b",
-                  "title": "Spoofing",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "spoofing": 2,
                 "repudiation": 0
@@ -270,11 +256,11 @@
               "threats": [
                 {
                   "id": "ee94263e-6c5f-4af2-8044-f1f836dc3d6c",
-                  "title": "Spoofing",
+                  "title": "Web Application Spoofing",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "description": "The web application may be spoofed by an attacker and this may lead to unauthorized access to the browser client.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -283,7 +269,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -306,11 +292,13 @@
                 "text": "LDAP"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -406,13 +394,33 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "90cc0247-5ecb-4710-b2c0-49c09f9f56e7",
+                  "title": "LDAP Injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "LDAP injection is possible, as the user authentication is verified using an LDAP query.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -544,7 +552,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "SQL INJECTION ATTACK",
+                  "description": "SQL injection is an attack in which malicious code is inserted into strings that are later passed to an instance of SQL Server for parsing and execution.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -553,7 +561,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
@@ -574,8 +582,8 @@
                 "text": "Auth"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -671,33 +679,19 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "b40a34ae-3756-48a7-8d73-8760a8b4608f",
-                  "title": "Privilege Elevation",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Elevation of privilege",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 0
               }
             }
           },
@@ -1049,7 +1043,7 @@
                 "y": 290
               },
               {
-                "x": 330,
+                "x": 310,
                 "y": 290
               }
             ]
@@ -1209,6 +1203,10 @@
               {
                 "x": 360,
                 "y": 400
+              },
+              {
+                "x": 460,
+                "y": 380
               }
             ]
           },
@@ -1325,6 +1323,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 6
+    "threatTop": 9
   }
 }
