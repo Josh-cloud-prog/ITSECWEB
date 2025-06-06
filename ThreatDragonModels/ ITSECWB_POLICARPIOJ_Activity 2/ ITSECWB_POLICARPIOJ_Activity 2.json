@@ -31,8 +31,8 @@
                 "text": "Browser Client"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -128,9 +128,36 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": [],
+              "threats": [
+                {
+                  "id": "52576429-d57e-4192-a4a2-6ffc40a5d123",
+                  "title": "Browser Client DoS (DENIAL OF SERVICE)",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "",
+                  "description": "The browser client crashes, halts, stops or runs slowly, in all cases violating an availability metric.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "e1fb46bc-1a3d-4180-ab5c-bcc4de3f2672",
+                  "title": "Browser Client Elevation of Privilege (ELEVATION OF PRIVILEGE) ",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "",
+                  "description": "An attacker may pass data into the browser client in order to choose the flow of program execution within the browser client to the attacker's choosing.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
                 "spoofing": 2,
                 "repudiation": 0
@@ -279,6 +306,19 @@
                   "new": false,
                   "number": 11,
                   "score": ""
+                },
+                {
+                  "id": "6424cfc7-8331-4847-b74f-c7b532cc7538",
+                  "title": "Web Application Elevation of Privilege",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "The browser client may be able to impersonate the context of the web application in order to gain additional privileges.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -287,7 +327,7 @@
                 "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -442,14 +482,14 @@
                 },
                 {
                   "id": "fc7dddb1-27ad-4ee2-9bad-18265c2c9a51",
-                  "title": "New STRIDE threat",
+                  "title": "LDAP Improper Data Protection",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
+                  "description": "Improper data protection of LDAP can allow an attacker to read information not intended for disclosure. Review authorization settings.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 13,
                   "score": ""
                 }
@@ -457,7 +497,7 @@
               "threatFrequency": {
                 "tampering": 1,
                 "repudiation": 1,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             }
@@ -610,13 +650,26 @@
                   "new": false,
                   "number": 10,
                   "score": ""
+                },
+                {
+                  "id": "709e298c-a266-4e77-8412-7ca872a56a99",
+                  "title": "SQL DoS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "An external agent prevents access to the SQL Database Server on the other side of the trust boundary.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 3,
+                "tampering": 5,
                 "repudiation": 1,
                 "informationDisclosure": 0,
-                "denialOfService": 0
+                "denialOfService": 1
               }
             }
           },
@@ -1066,60 +1119,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Feedback saved",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Feedback saved"
-            ],
-            "id": "a6d08d12-c8dc-4dbd-b97f-ac63a5195b9d",
-            "source": {
-              "cell": "1eba5e0b-b6cd-41b9-b560-a46f7e7aa9b4",
-              "port": "f1a4cef2-865b-444f-9eb2-022425a33aa3"
-            },
-            "target": {
-              "cell": "694d597d-ad83-4cff-9e0f-b1f144a310f7",
-              "port": "e85b0cf3-20ee-414e-9c2f-b3e1a9923bc9"
-            },
-            "vertices": [
-              {
-                "x": 380,
-                "y": 350
-              },
-              {
-                "x": 310,
-                "y": 350
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "User is Authenticated",
               "description": "",
               "outOfScope": false,
@@ -1212,7 +1211,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1232,12 +1232,31 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "24e91a28-0e06-43e3-8da8-8f979789d4c0",
+                  "title": "Data Flow Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a fairly large number of exploitable issues. Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Insert feedback comments"
@@ -1369,12 +1388,96 @@
                 "y": 160
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Feedback saved",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5a56a136-920d-4379-b238-17ecb6d9213b",
+                  "title": "Feedback Data Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Data flowing across saved feedback comments may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Feedback saved"
+            ],
+            "id": "a6d08d12-c8dc-4dbd-b97f-ac63a5195b9d",
+            "source": {
+              "cell": "1eba5e0b-b6cd-41b9-b560-a46f7e7aa9b4",
+              "port": "f1a4cef2-865b-444f-9eb2-022425a33aa3"
+            },
+            "target": {
+              "cell": "694d597d-ad83-4cff-9e0f-b1f144a310f7",
+              "port": "e85b0cf3-20ee-414e-9c2f-b3e1a9923bc9"
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 350
+              },
+              {
+                "x": 310,
+                "y": 350
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 15
+    "threatTop": 23
   }
 }
