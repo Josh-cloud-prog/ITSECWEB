@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 150,
-              "y": 360
+              "x": 230,
+              "y": 470
             },
             "size": {
               "width": 112.5,
@@ -166,8 +166,8 @@
           },
           {
             "position": {
-              "x": 484,
-              "y": 360
+              "x": 564,
+              "y": 470
             },
             "size": {
               "width": 60,
@@ -333,8 +333,8 @@
           },
           {
             "position": {
-              "x": 720,
-              "y": 90
+              "x": 800,
+              "y": 200
             },
             "size": {
               "width": 120,
@@ -504,8 +504,8 @@
           },
           {
             "position": {
-              "x": 720,
-              "y": 360
+              "x": 800,
+              "y": 470
             },
             "size": {
               "width": 120,
@@ -675,8 +675,8 @@
           },
           {
             "position": {
-              "x": 474,
-              "y": 90
+              "x": 554,
+              "y": 200
             },
             "size": {
               "width": 60,
@@ -845,12 +845,12 @@
             },
             "vertices": [
               {
-                "x": 610,
-                "y": 90
+                "x": 690,
+                "y": 200
               },
               {
-                "x": 670,
-                "y": 90
+                "x": 750,
+                "y": 200
               }
             ]
           },
@@ -899,8 +899,8 @@
             },
             "vertices": [
               {
-                "x": 630,
-                "y": 160
+                "x": 710,
+                "y": 270
               }
             ]
           },
@@ -949,8 +949,8 @@
             },
             "vertices": [
               {
-                "x": 560,
-                "y": 260
+                "x": 640,
+                "y": 370
               }
             ]
           },
@@ -999,8 +999,8 @@
             },
             "vertices": [
               {
-                "x": 450,
-                "y": 260
+                "x": 530,
+                "y": 370
               }
             ]
           },
@@ -1094,8 +1094,8 @@
             },
             "vertices": [
               {
-                "x": 620,
-                "y": 430
+                "x": 700,
+                "y": 540
               }
             ]
           },
@@ -1144,8 +1144,8 @@
             },
             "vertices": [
               {
-                "x": 360,
-                "y": 420
+                "x": 440,
+                "y": 530
               }
             ]
           },
@@ -1185,8 +1185,8 @@
             ],
             "id": "7b8bcbac-b14e-446e-9763-c6a7d20fb5a4",
             "source": {
-              "x": 210,
-              "y": 360
+              "x": 290,
+              "y": 470
             },
             "target": {
               "cell": "1eba5e0b-b6cd-41b9-b560-a46f7e7aa9b4",
@@ -1194,16 +1194,16 @@
             },
             "vertices": [
               {
-                "x": 290,
-                "y": 310
+                "x": 370,
+                "y": 420
               },
               {
-                "x": 410,
-                "y": 310
+                "x": 490,
+                "y": 420
               },
               {
-                "x": 460,
-                "y": 330
+                "x": 540,
+                "y": 440
               }
             ]
           },
@@ -1263,8 +1263,8 @@
             ],
             "id": "12238850-5130-40f7-9a73-f1c60c35f891",
             "source": {
-              "x": 200,
-              "y": 430
+              "x": 280,
+              "y": 540
             },
             "target": {
               "cell": "1eba5e0b-b6cd-41b9-b560-a46f7e7aa9b4",
@@ -1272,76 +1272,12 @@
             },
             "vertices": [
               {
-                "x": 360,
-                "y": 460
+                "x": 440,
+                "y": 570
               },
               {
-                "x": 460,
-                "y": 440
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "5213ed9a-ce96-45db-aa9b-d9a3bd3a48c9",
-            "source": {
-              "x": 480,
-              "y": 490
-            },
-            "target": {
-              "x": 520,
-              "y": 290
-            },
-            "vertices": [
-              {
-                "x": 410,
-                "y": 370
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "d0419db7-9141-4c28-a082-6d3f66061d58",
-            "source": {
-              "x": 690,
-              "y": 150
-            },
-            "target": {
-              "x": 730,
-              "y": 560
-            },
-            "vertices": [
-              {
-                "x": 650,
-                "y": 360
+                "x": 540,
+                "y": 550
               }
             ]
           },
@@ -1363,29 +1299,29 @@
             ],
             "id": "7a0d98ab-0e2b-489c-bb8b-a019842aa102",
             "source": {
-              "x": 410,
-              "y": 120
+              "x": 490,
+              "y": 230
             },
             "target": {
-              "x": 560,
-              "y": 110
+              "x": 640,
+              "y": 220
             },
             "vertices": [
               {
-                "x": 440,
-                "y": 160
+                "x": 520,
+                "y": 270
               },
               {
-                "x": 470,
-                "y": 180
+                "x": 550,
+                "y": 290
               },
               {
-                "x": 530,
-                "y": 180
+                "x": 610,
+                "y": 290
               },
               {
-                "x": 560,
-                "y": 160
+                "x": 640,
+                "y": 270
               }
             ]
           },
@@ -1454,24 +1390,78 @@
             },
             "vertices": [
               {
-                "x": 400,
-                "y": 350
+                "x": 480,
+                "y": 460
               },
               {
-                "x": 310,
-                "y": 350
+                "x": 390,
+                "y": 460
               }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
             ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "id": "d0419db7-9141-4c28-a082-6d3f66061d58",
+            "source": {
+              "x": 770,
+              "y": 180
+            },
+            "target": {
+              "x": 810,
+              "y": 590
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "5213ed9a-ce96-45db-aa9b-d9a3bd3a48c9",
+            "source": {
+              "x": 580,
+              "y": 610
+            },
+            "target": {
+              "x": 620,
+              "y": 410
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 490
+              }
+            ]
           }
         ]
       }
